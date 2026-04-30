@@ -1,4 +1,4 @@
-﻿
+
 /* 1. Box sizing rules */
 *,
 *::before,
@@ -71,7 +71,6 @@ a {
 html {
     font-size: 62.5%;
 }
-
 
 body {
     width: 100%;
