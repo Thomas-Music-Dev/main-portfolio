@@ -73,6 +73,10 @@ html {
 }
 
 body {
+  background: red !important;
+}
+
+body {
     width: 100%;
     height: 100vh;
     overflow-x: hidden;
