@@ -8,7 +8,7 @@ let displayData = {
     "Video scrolling app": {
         number: "1",
         
-        Description: "Why the F-35 and MQ-9 dskfhjlkshflfd",
+        Description: "A video-scrolling app where users swipe through short, visual note formats like mind maps, collapsible headings, and structured summaries designed for fast, intuitive learning.",
         demoLink: "https://www.youtube.com/watch?v=XwZ3Q0Km-Ow",
         projectLogs: "https://www.youtube.com/embed/Sw_PFCPWxCE?si=qXAbel8ukFVvaBN0",
         github: "youtube.com",
