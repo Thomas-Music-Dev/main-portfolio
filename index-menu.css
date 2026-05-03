@@ -141,8 +141,8 @@ nav a {
     margin-left: 30px;
     font-size: 1.8rem;
     padding: 5px;
-    background: linear-gradient( 135deg, #FFD700 0%, #FFF8DC 20%, /* light reflection */
-    #FFD700 40%, #B8960B 100% );
+    background: linear-gradient( 135deg, #FFC300 0%, #FFF1A8 20%, /* light reflection */
+    #FFC300 40%, #CC9A00 100% );
     color: black;
     border: none;
     padding: 10px 25px;
