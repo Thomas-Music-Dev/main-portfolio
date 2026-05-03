@@ -93,7 +93,7 @@ header {
     left: 0;
     width: 100%;
     padding: 1rem 9%;
-    background-color: #E6C200;
+    background-color: #FFC300;
     filter: drop-shadow(10px);
     display: flex;
     justify-content: space-between;
@@ -140,8 +140,8 @@ nav a {
     margin-left: 30px;
     font-size: 1.8rem;
     padding: 5px;
-    background: linear-gradient( 135deg, #FFD700 0%, #FFF8DC 20%, /* light reflection */
-    #FFD700 40%, #B8960B 100% );
+    background: linear-gradient( 135deg, #FFC300 0%, #FFF1A8 20%, /* light reflection */
+    #FFC300 40%, #CC9A00 100% );
     color: black;
     border: none;
     padding: 10px 25px;
@@ -172,8 +172,8 @@ nav a {
         /*        ACTION Sliding NAV MENU                               */
         width: 300px;
         /*       END ACTION Sliding NAV MENU                               */
-        border-right: 3px solid #E6C200;
-        border-bottom: 3px solid #E6C200;
+        border-right: 3px solid #FFC300;
+        border-bottom: 3px solid #FFC300;
         border-bottom-right-radius: 2rem;
         padding: 1rem solid;
         background-color: #F0F0F0;
@@ -201,9 +201,9 @@ nav a {
 
         nav a:hover,
         nav a.active {
-            color: #E6C200;
+            color: #FFC300;
             border-radius: 0.5rem;
-            border-bottom: 0.5rem solid #E6C200;
+            border-bottom: 0.5rem solid #FFC300;
         }
 
 
@@ -227,7 +227,7 @@ nav a {
             position: absolute;
             height: 2px;
             width: 20px;
-            background-color: #E6C200;
+            background-color: #FFC300;
             border-radius: 50px;
             transition: 0.3s ease;
         }
