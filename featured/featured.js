@@ -9,7 +9,7 @@ let displayData = {
         number: "1",
         
         Description: "A video-scrolling app where users swipe through short, visual note formats like mind maps, collapsible headings, and structured summaries designed for fast, intuitive learning.",
-        demoLink: "https://www.youtube.com/watch?v=XwZ3Q0Km-Ow",
+        demoLink: "https://thomas-music-dev.github.io/video-scrolling-app/index.html",
         projectLogs: "https://www.youtube.com/embed/Sw_PFCPWxCE?si=qXAbel8ukFVvaBN0",
         github: "youtube.com",
         
