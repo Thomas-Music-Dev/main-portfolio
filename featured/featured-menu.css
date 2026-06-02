@@ -96,3 +96,54 @@ header {
     .logs-button:hover {
         border-bottom-color: #000000;
     }
+
+
+
+/*                          ---Data Table---                                          */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0f172a;
+    color: #e2e8f0;
+    padding: 40px;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 900px;
+    background-color: #1e293b;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: #334155;
+}
+
+th {
+    padding: 16px;
+    text-align: left;
+    font-size: 15px;
+    border-bottom: 2px solid #475569;
+}
+
+td {
+    padding: 16px;
+    font-size: 12px;
+    border-bottom: 1px solid #334155;
+    vertical-align: top;
+    line-height: 1.5;
+}
+
+tr:hover {
+    background-color: #273449;
+}
+
+.empty-cell {
+    height: 60px;
+}
+
