@@ -801,27 +801,52 @@
                     </button>
 
                     <div style="background-color: #b3b3b3; color: white; " class="subcontent">
-                        Key Concepts, Code Syntax, Sample Projects
+                        <ul>
+                            <li>List of Common Vulnerabilities</li>
+                            <li>Threat Maps (Attacker POV)</li>
+                            <li>Patching Methods</li>
+                            <li>Code Syntax</li>
+                            <li>Sample Projects</li>
+                            <li>Testing Methods</li>
+                        </ul>
+                    
+                        
                     </div>
 
                     <button style="background-color: white; color: black;" class="subheading">
-                        White Belt
+                        White Belt (Foundations — “Don’t get instantly hacked”)
                     </button>
 
                     <div class="subcontent">
                         <ul style="list-style-type: none;">
-                            <li>- Goal: Learn the basics of programming syntax and structure.</li>
+                            <li>- Goal: Build secure foundational backend hygiene and prevent basic vulnerabilities.</li>
+                            <li>- Core Idea: Basic security hygiene — stop the most common attacks early.</li>
+                            
                             <li>- Skills:</li>
-
-                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Variables and constants</li>
-                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Data types (numbers, strings, booleans)</li>
-                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Input/Output (print statements, reading user input)</li>
-                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Basic math operations</li>
-                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Conditionals (if/else statements)</li>
-
+                            
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Input Validation (never trust user input)</li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Output Escaping (prevent HTML / script injection)</li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Password Basics (hashing, never plaintext storage)</li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- HTTPS Setup (SSL/TLS encryption in transit)</li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Basic Authentication Flows (login/logout systems)</li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Environment Variables (secure secret management)</li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Error Handling (avoid stack trace leaks)</li>
+                            
+                            <li>- Threats You Prevent:</li>
+                            
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Script injection (XSS / HTML injection)</li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Credential leaks (plaintext or weak password storage)</li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Simple bot attacks (basic abuse / login guessing)</li>
+                            
+                            <li>- Tools / Concepts:</li>
+                            
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- HTTPS (TLS encryption)</li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Hashing (bcrypt / secure password storage)</li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- .env files (environment-based configuration)</li>
+                            
                             <!-- Bottom border line -->
                             <li style="border-bottom: 2px solid black; padding-bottom: 8px;">
-                                &nbsp;&nbsp;&nbsp;&nbsp;- Random numbers
+                                &nbsp;&nbsp;&nbsp;&nbsp;- End Goal: Build backend systems that are resistant to basic real-world attacks
                             </li>
 
                             <!-- New item below the line -->
@@ -833,25 +858,39 @@
                     </div>
 
                     <button style="background-color: blue; color: white;" class="subheading">
-                        Blue Belt
+                        Blue Belt (Application Security — “Protect user data”)
                     </button>
 
                     <div style="background-color: #3d5aff; color: white; " class="subcontent">
                         <ul>
-                            <li>- Goal: Build core problem-solving skills and handle data.</li>
+                            <li>- Goal: Secure how your application handles users, data, and requests.</li>
+                            <li>- Core Idea: Application security — protect user data and prevent common web attacks.</li>
+                            
                             <li>- Skills:</li>
-                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Loops: for, while</li>
-                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Basic data structures: arrays/lists, dictionaries/maps</li>
-                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- File I/O (reading and writing files)</li>
-                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Error handling (try/catch)</li>
-                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Lists and Tuples</li>
-                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- String Manipulations</li>
-                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Converting individual elements in lists and arrays</li>
-                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Accumulators</li>
-
+                            
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- SQL Injection Prevention (parameterized queries, ORM safety)</li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Cross-Site Scripting (XSS) Protection</li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Cross-Site Request Forgery (CSRF) Protection</li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Secure Cookies (HttpOnly, SameSite, Secure flags)</li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Session Management (creation, validation, expiration)</li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Authentication vs Authorization (separating identity from permissions)</li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Basic Rate Limiting (prevent abuse and bot attacks)</li>
+                            
+                            <li>- Threats You Prevent:</li>
+                            
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Account hijacking</li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Data theft and database compromise</li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Malicious request forgery and injection attacks</li>
+                            
+                            <li>- Tools / Concepts:</li>
+                            
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- SQL Injection</li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Cross-Site Scripting (XSS)</li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- CSRF (Cross-Site Request Forgery)</li>
+                            
                             <!-- Bottom border line -->
                             <li style="border-bottom: 2px solid black; padding-bottom: 8px;">
-                                &nbsp;&nbsp;&nbsp;&nbsp;- Accumulators
+                                &nbsp;&nbsp;&nbsp;&nbsp;- End Goal: Build applications that safely handle users, permissions, and data access
                             </li>
 
                             <!-- New item below the line -->
@@ -863,29 +902,40 @@
                     </div>
 
                     <button style="background-color: rebeccapurple; color: white; " class="subheading">
-                        Purple Belt
+                        Purple Belt (System Security — “Don’t expose your backend”)
                     </button>
 
                     <div style="background-color: #7a4db8; color: white; " class="subcontent">
                         <ul style="list-style-type: none;">
-                            <li>- Goal: Focus on code modularity, abstraction, and external tools.</li>
+                            <li>- Goal: Lock down backend services and prevent unauthorized system behavior or access.</li>
+                            <li>- Core Idea: System security — protect APIs, services, and backend logic from abuse.</li>
+                            
                             <li>- Skills:</li>
-
-                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Object-Oriented Programming (classes, methods, attributes)</li>
-                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Encapsulation, inheritance, polymorphism, abstraction</li>
-                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Using libraries/frameworks (e.g., NumPy, Pandas, Spring, Flask)</li>
-                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Algorithms: sorting, searching, and recursion</li>
-
-                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Modular programming (working with multiple files, methods/functions)</li>
-                            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Local and global variables</li>
-
-                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Dictionaries and Arrays</li>
-
+                            
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- API Security (authentication tokens, request validation)</li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- JSON Web Tokens (JWT) secure implementation and validation</li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Role-Based Access Control (RBAC)</li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- File Upload Security (malicious file prevention, validation, scanning)</li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Input Sanitization (multi-layer validation: frontend + backend + DB)</li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Logging & Monitoring Basics (audit trails, error tracking)</li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Secure Headers (Content Security Policy, security headers setup)</li>
+                            
+                            <li>- Threats You Prevent:</li>
+                            
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Privilege escalation (users accessing admin-level actions)</li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Unauthorized API access (broken auth or token misuse)</li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Malicious file uploads (RCE, storage abuse, malware injection)</li>
+                            
+                            <li>- Tools / Concepts:</li>
+                            
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- JSON Web Tokens (JWT)</li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Role-Based Access Control (RBAC)</li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Content Security Policy (CSP)</li>
+                            
                             <!-- Bottom border line -->
                             <li style="border-bottom: 2px solid black; padding-bottom: 8px;">
-                                &nbsp;&nbsp;&nbsp;&nbsp;- Data Structures: linked lists, stacks, queues, heaps, and trees
+                                &nbsp;&nbsp;&nbsp;&nbsp;- End Goal: Secure backend systems so APIs, files, and services cannot be abused or escalated
                             </li>
-
                             <!-- New item below the line -->
                             <li style="padding-top: 8px;">
                                 Languages Available:
@@ -895,22 +945,38 @@
                     </div>
 
                     <button style="background-color: saddlebrown; color: white; " class="subheading">
-                        Brown Belt
+                        Brown Belt (Advanced Defense — “Think like an attacker”)
                     </button>
 
                     <div style="background-color: #a05a1a; color: white; " class="subcontent">
                         <ul style="list-style-type: none;">
-                            <li>- Goal: Work on applied programming skills for practical projects.</li>
+                            <li>- Goal: Build advanced defensive systems by thinking like an attacker and preventing real-world abuse patterns.</li>
+                            <li>- Core Idea: Advanced defense — anticipate attack strategies and close system-level weaknesses.</li>
+                            
                             <li>- Skills:</li>
-
-                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Web development basics (HTML/CSS/JavaScript)</li>
-                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- SQL integration (queries, database interaction)</li>
-                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- REST APIs (sending requests, parsing JSON)</li>
-                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Asynchronous programming (promises, async/await)</li>
-
+                            
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Rate Limiting & Anti-Bot Systems (prevent automated abuse)</li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Brute Force Protection (login throttling, lockouts)</li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Input Fuzzing & Edge-Case Handling (unexpected payload resilience)</li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Dependency Vulnerability Scanning (third-party package security)</li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Secure Password Reset Flows (token security, expiry, verification)</li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Multi-Factor Authentication (MFA implementation)</li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Data Encryption at Rest (database/storage encryption)</li>
+                            
+                            <li>- Threats You Prevent:</li>
+                            
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Credential stuffing (stolen password reuse attacks)</li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Bot abuse (automated scraping, spam, brute force)</li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Exploitation of weak flows (especially password reset and recovery systems)</li>
+                            
+                            <li>- Tools / Concepts:</li>
+                            
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Multi-Factor Authentication (MFA)</li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Encryption at Rest</li>
+                            
                             <!-- Bottom border line -->
                             <li style="border-bottom: 2px solid black; padding-bottom: 8px;">
-                                &nbsp;&nbsp;&nbsp;&nbsp;- Debugging and testing (unit tests, test frameworks like Jest or PyTest)
+                                &nbsp;&nbsp;&nbsp;&nbsp;- End Goal: Build systems that resist automated attacks and exploit attempts even under real-world pressure
                             </li>
 
                             <!-- New item below the line -->
@@ -927,20 +993,35 @@
 
                     <div style="background-color: #141414; color: white; " class="subcontent">
                         <ul style="list-style-type: none;">
-                            <li>- Goal: Achieve deep understanding and specialize in advanced topics.</li>
+                            <li>- Goal: Build production-ready, hardened systems that are resilient, monitored, and scalable under real-world attack conditions.</li>
+                            <li>- Core Idea: Production security — defend infrastructure, detect threats, and maintain system integrity at scale.</li>
+                            
                             <li>- Skills:</li>
-
-                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Compiler basics (how languages like C/C++ manage memory and compilation)</li>
-                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Advanced algorithms (graph theory, dynamic programming)</li>
-                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Concurrency and multi-threading</li>
-                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Memory management and optimization</li>
-                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Distributed systems (e.g., cloud computing, serverless architecture)</li>
-                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Advanced security practices (encryption, authentication protocols)</li>
-                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Networking: TCP/IP, WebSockets, and distributed systems</li>
-
+                            
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Zero Trust Architecture (never trust internal or external by default)</li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Secrets Management (vault systems, key rotation strategies)</li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Advanced Logging & Alerting Systems (real-time monitoring and incident response)</li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Intrusion Detection Concepts (detecting abnormal behavior patterns)</li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Security Audits & Penetration Testing (finding vulnerabilities proactively)</li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Backup & Recovery Planning (disaster recovery systems)</li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- DDoS Mitigation Strategies (traffic filtering, rate scaling, CDN protection)</li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Secure CI/CD Pipelines (secure deployment pipelines and build integrity)</li>
+                            
+                            <li>- Threats You Prevent:</li>
+                            
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Large-scale coordinated attacks (botnets, distributed abuse)</li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Insider threats (malicious or compromised internal actors)</li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Infrastructure compromise (system-wide breaches or outages)</li>
+                            
+                            <li>- Tools / Concepts:</li>
+                            
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Zero Trust Architecture</li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- DDoS Mitigation</li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- Penetration Testing</li>
+                            
                             <!-- Bottom border line -->
                             <li style="border-bottom: 2px solid black; padding-bottom: 8px;">
-                                &nbsp;&nbsp;&nbsp;&nbsp;- Optimization for GPU & CPU
+                                &nbsp;&nbsp;&nbsp;&nbsp;- End Goal: Maintain hardened, observable, and resilient production systems that can survive real-world attack scenarios
                             </li>
                             <!-- New item below the line -->
                             <li style="padding-top: 8px;">
