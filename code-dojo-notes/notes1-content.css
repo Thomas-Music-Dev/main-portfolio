@@ -60,7 +60,9 @@ body {
         background: #2980b9;
     }
 
-
+ul {
+    padding: 10px;
+}
 
 
 /* Hidden content */
